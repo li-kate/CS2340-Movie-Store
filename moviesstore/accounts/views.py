@@ -1,12 +1,21 @@
 from django.shortcuts import render
-from django.contrib.auth.forms import UserCreationForm
-# UserCreationForm: designed to facilitate the creation of user registration forms, 
-# specifically to create new user accounts
+from .forms import CustomUserCreationForm, CustomErrorList
+from django.shortcuts import redirect
 
 def signup(request):
     template_data = {}
     template_data['title'] = 'Sign Up'
     if request.method == 'GET':
-        template_data['form'] = UserCreationForm()
+        template_data['form'] = CustomUserCreationForm()
         return render(request, 'accounts/signup.html',
             {'template_data': template_data})
+    elif request.method == 'POST':
+        form = CustomUserCreationForm(request.POST,
+            error_class=CustomErrorList)
+        if form.is_valid():
+            form.save()
+            return redirect('home.index')
+        else:
+            template_data['form'] = form
+            return render(request, 'accounts/signup.html',
+                {'template_data': template_data})
