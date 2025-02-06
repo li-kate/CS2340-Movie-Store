@@ -1,1 +1,1 @@
-# 2340-Project-1
+# CS2340 Movie Store
