@@ -1,5 +1,5 @@
 # CS2340 Movie Store
-## User Story 17 - Make Site Accessible Anywhere
+## User Story 16 - Make Site Accessible Anywhere
 This is from [Chapter 13](https://learning.oreilly.com/library/view/django-5-for/9781835461556/B22457_13.xhtml#_idParaDest-251) of the textbook.
 1. Make an account on [Python Anywhere](https://www.pythonanywhere.com/registration/register/beginner/).
 2. Copy HTTP link from GitHub.
