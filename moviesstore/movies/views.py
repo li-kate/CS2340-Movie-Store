@@ -9,7 +9,7 @@ def index(request):
         movies = Movie.objects.all()
     template_data = {}
     template_data['title'] = 'Movies'
-    template_data['movies'] = Movie.objects.all()
+    template_data['movies'] = movies
     print(template_data)
     return render(request, 'movies/index.html',
                   {'template_data': template_data})
