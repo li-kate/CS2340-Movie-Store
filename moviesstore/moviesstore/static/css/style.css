@@ -5,6 +5,8 @@
 
 .navbar a.nav-link {
   color: #FFFEF6 !important;
+  padding-left:30px;
+  padding-right:30px;
 }
 .bg-dark {
   background-color: #2E2E2E !important;
