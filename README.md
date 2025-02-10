@@ -38,3 +38,8 @@ application = get_wsgi_application()
 18. Go to the "Web" tab and under "Static files," add the URL as `/static/` and the directory as the directory bash gave you in step 17.
 19. Click the "Reload <yourusernamehere>.pythonanywhere.com" button.
 20. Click the blue link to the website and enjoy :)
+
+
+
+
+need pip install python-decouple
