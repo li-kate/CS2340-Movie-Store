@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from .models import Movie, Review
 from django.contrib.auth.decorators import login_required
 
@@ -17,9 +17,11 @@ def index(request):
 
 def show(request, id):
     movie = Movie.objects.get(id=id)
+    reviews = Review.objects.filter(movie=movie)
     template_data = {}
     template_data['title'] = movie.name
     template_data['movie'] = movie
+    template_data['reviews'] = reviews
     return render(request, 'movies/show.html',
                   {'template_data': template_data})
 
@@ -35,3 +37,4 @@ def create_review(request, id):
         return redirect('movies:movies.show', id=id)
     else:
         return redirect('movies:movies.show', id=id)
+        
