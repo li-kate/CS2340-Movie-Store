@@ -141,6 +141,6 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = config('OUTLOOK_EMAIL')  # Read from .env
 EMAIL_HOST_PASSWORD = config('OUTLOOK_PASSWORD')  # Read from .env
-DEFAULT_FROM_EMAIL = 'Movie Store <kli605@gatech.edu>'
+DEFAULT_FROM_EMAIL = config('OUTLOOK_EMAIL') 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
