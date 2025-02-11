@@ -25,6 +25,9 @@
             <a class="btn btn-primary"
               href="{% url 'movies:edit_review' template_data.movie.id review.id %}">Edit
             </a>
+            <a class="btn btn-danger"
+              href="{% url 'movies:delete_review' template_data.movie.id review.id %}">Delete
+            </a>
             {% endif %}
           </li>
           {% endfor %}
