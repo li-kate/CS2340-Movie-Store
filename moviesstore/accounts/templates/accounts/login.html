@@ -8,11 +8,14 @@
           <div class="card-body">
             <h2>Login</h2>
             <hr />
+
+            <!-- Add the error message block here -->
             {% if template_data.error %}
             <div class="alert alert-danger" role="alert">
               {{ template_data.error }}
             </div>
             {% endif %}
+
             <form method="POST">
               {% csrf_token %}
               <p>
