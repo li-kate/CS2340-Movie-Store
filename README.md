@@ -32,6 +32,17 @@ https://cs2340pr1elias1.tilda.ws/
    git remote -v # confirm the changes
    ```
 
+### Access to the Admin Interface
+Scroll down to *Introducing the Django Admin*, and follow the tutorial.
+https://docs.djangoproject.com/en/5.1/intro/tutorial02/
+
+### Creating the Database
+In the terminal, cd to where you have the project, then paste the following.
+   ```sh
+   py manage.py migrate
+   ```
+or python manage.py migrate for Mac/Linux users
+
 ### Creating the .env file
 In /moviesstore (same folder location as manage.py), create a .env file and paste the following, and replace your email and your email password with your email and password.
    ```sh
