@@ -37,7 +37,7 @@ Scroll down to *Introducing the Django Admin*, and follow the tutorial.
 https://docs.djangoproject.com/en/5.1/intro/tutorial02/
 
 ### Creating the Database
-In the terminal, cd to where you have the project, then paste the following.
+In the terminal, cd to where you have the project, then paste the following (for Windows users).
    ```sh
    py manage.py migrate
    ```
