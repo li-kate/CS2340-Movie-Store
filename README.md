@@ -23,9 +23,9 @@ https://cs2340pr1elias1.tilda.ws/
    git clone https://github.com/li-kate/CS2340-Movie-Store.git
    ```
 2, Install python-decouple to use .env files
-      ```sh
-      pip install python-decouple
-      ```
+   ```sh
+   pip install python-decouple
+   ```
 3. Change git remote url to avoid accidental pushes to base project
    ```sh
    git remote set-url origin github_username/repo_name
