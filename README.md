@@ -12,12 +12,12 @@ Objects and Design (CS 2340) course project with the goal of designing and devel
 https://cs2340pr1elias1.tilda.ws/
 
 ## Running the Website on Your Local Computer
-# Prerequisites
+### Prerequisites
 1. Python (https://www.python.org/)
 2. pip (https://pip.pypa.io/en/latest/installation/)
 3. Django (https://www.djangoproject.com/)
    
-# Installation
+### Installation
 1. Clone the repo
    ```sh
    git clone https://github.com/li-kate/CS2340-Movie-Store.git
@@ -32,7 +32,7 @@ https://cs2340pr1elias1.tilda.ws/
    git remote -v # confirm the changes
    ```
 
-# Creating the .env file
+### Creating the .env file
 In /moviesstore (same folder location as manage.py), create a .env file and paste the following, and replace your email and your email password with your email and password.
    ```sh
   OUTLOOK_EMAIL= your email
