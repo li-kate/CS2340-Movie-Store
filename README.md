@@ -30,6 +30,7 @@ https://cs2340pr1elias1.tilda.ws/
    ```sh
    git remote set-url origin github_username/repo_name
    git remote -v # confirm the changes
+   ```
 
 # Creating the .env file
 In /moviesstore (same folder location as manage.py), create a .env file and paste the following.
