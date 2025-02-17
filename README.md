@@ -23,9 +23,9 @@ https://cs2340pr1elias1.tilda.ws/
    git clone https://github.com/li-kate/CS2340-Movie-Store.git
    ```
 2, Install python-decouple to use .env files
-   ```sh
-   pip install python-decouple
-   ```
+      ```sh
+      pip install python-decouple
+      ```
 3. Change git remote url to avoid accidental pushes to base project
    ```sh
    git remote set-url origin github_username/repo_name
@@ -33,10 +33,10 @@ https://cs2340pr1elias1.tilda.ws/
    ```
 
 # Creating the .env file
-In /moviesstore (same folder location as manage.py), create a .env file and paste the following.
+In /moviesstore (same folder location as manage.py), create a .env file and paste the following, and replace your email and your email password with your email and password.
    ```sh
-  OUTLOOK_EMAIL=[your email]
-  OUTLOOK_PASSWORD=[your email password]
+  OUTLOOK_EMAIL= your email
+  OUTLOOK_PASSWORD= your email password
    ```
 **Note:** The variable says outlook, but if you are using a different emailing service, you just have to change the EMAIL_HOST in settings.py in /moviesstore/moviesstore to the SMTP server of the emailing service you are using.
    ```sh
