@@ -22,7 +22,7 @@ https://cs2340pr1elias1.tilda.ws/
    ```sh
    git clone https://github.com/li-kate/CS2340-Movie-Store.git
    ```
-2, Install python-decouple to use .env files
+2. Install python-decouple to use .env files
    ```sh
    pip install python-decouple
    ```
