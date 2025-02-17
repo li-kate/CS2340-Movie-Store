@@ -11,5 +11,5 @@ Objects and Design (CS 2340) course project with the goal of designing and devel
 ## Learn about the Team and Process
 https://cs2340pr1elias1.tilda.ws/
 
-## Acknoledgements
+## Acknowledgments
 This project follows the process featured in the textbook "Django 5 for the Impatient: Learn the core concepts of Django to develop Python web applications" by Dr. Daniel Correa and Mr. Greg Lim.
