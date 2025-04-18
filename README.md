@@ -48,8 +48,12 @@ In /moviesstore (same folder location as manage.py), create a .env file and past
    ```sh
   OUTLOOK_EMAIL= your email
   OUTLOOK_PASSWORD= your email password
+  SECRET_KEY = your secret key
+  # SECURITY WARNING: don't run with debug turned on in production!
+  DEBUG = True
+   
    ```
-**Note:** The variable says Outlook, but if you are using a different emailing service, you just have to change the EMAIL_HOST in settings.py in /moviesstore/moviesstore to the SMTP server of the emailing service you are using.
+**Note:** The variable says Outlook, but if you are using a different emailing service, you just have to change the EMAIL_HOST in settings.py in /moviesstore/moviesstore to the SMTP server of the emailing service you are using. The other email service (like gmail) might want your app password instead of your email password.
    ```sh
   EMAIL_HOST = 'smtp.office365.com' # Currently using Outlook
    ```
